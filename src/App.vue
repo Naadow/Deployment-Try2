@@ -4,9 +4,22 @@
       <router-link :to="{ name: 'EventList' }">Events</router-link> |
       <router-link :to="{ name: 'About' }">About</router-link>
     </div>
+    
     <router-view />
+          <div v-if="showExtra">Extra </div>
+          <div v-else>Extra </div>
+
   </div>
 </template>
+
+
+
+<script>
+export default {
+  props:['showExtra']
+}
+</script>
+
 
 <style>
 #app {

@@ -7,7 +7,8 @@ const routes = [
   {
     path: '/',
     name: 'EventList',
-    component: EventList
+    component: EventList,
+    props: { showExtra: true},
   },
   {
     path: '/about',
